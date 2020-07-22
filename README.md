@@ -87,8 +87,43 @@ def code_to_numeric(code):
         return 1
  ```
 
+### Hypothesis Testing:
+* Hypothesis Test # 1:
+
+   H0: There is no difference in proportion of deaths related to adverse drug events among men and women.
+   
+   Ha: There is a difference in proportion of deaths related to adverse drug events between men and women.
+   
+   Statistical Test Used: Chi-Squared Test for Independence; alpha=0.05
+   
+   Results:
+   
+| **Result** | **Value** |
+| -------- | ------- |
+| chi2 | 9128.3 |
+| P-value | 0.00 |
+| dof | 10 |
+
+
+  Conclusion: There is a statistically significant difference in proportion of deaths among males and females.
+  
+### Interesting Finds
+* The top reported drug in this database is Xolair (omalizumab)
+ * This medication is indicated for moderate to severe asthma and chronic idiopathic urticaria (3)
+ * The top 5 reported adverse events related to Xolair in my dataset with their counts are as follows:
+   
+| **Adverse Event**  | **Frequency** |
+| ------------- | ------------- |
+| Decreased Weight  | 2579  |
+| Dysnea  | 2348  |
+|asthma | 2333 |
+| Nasopharyngitis  | 2312   |
+| Cough    |  2160  |
+
 ### References:
 
 (1) https://www.fda.gov/drugs/surveillance/questions-and-answers-fdas-adverse-event-reporting-system-faers
 
 (2) http://www.freestockphotos.biz/stockphoto/1167
+
+(3) https://www.accessdata.fda.gov/drugsatfda_docs/label/2016/103976s5225lbl.pdf
