@@ -72,7 +72,7 @@ def code_to_numeric(code):
         
  merged_df['age_multiplier'] = merged_df['age_cod'].map(code_to_numeric)
  ```
- A similar issue was encounteres with weight and unit conversion:
+ A similar issue was encountered with weight and unit conversion:
  
  ```
  def weight_conversion(code):
