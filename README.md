@@ -89,14 +89,58 @@ def code_to_numeric(code):
  
  
 ### Exploratory Data Analysis (EDA):
+During exploration of this dataset, I explored patient attributes of potential interest such as sex, weight, and age. The distributions of age and weight are as follows:
 
+![text](images/Age_distribution.png)
+
+![text](images/pt_wt_distribution.png)
+
+The distribution of patient age in years appears to be left-skewed and the distribution of patient weight in lbs appears to be right-skewed. The average age of the patients in this dataset was 58 years with median at 62 years. The average weight of patients in this dataset came out to 166 lbs and median of 158 lbs. I also explored the relationship of weight and age of the patients in this dataset as compared among men and women:
+
+![text](images/Age_weight_scat.png)
+
+The results of this comparison shows that the weight tends to drop off slightly after the average age and that in general it appears that men have higher weights than women. Nothing unexpected or surprising from these findings. To dig into the dataset, I wanted to explore 2 columns, 'outc_cod' (outcome codes) and 'occp_cod' (occupation code). The outcomes code column had the following possible values:
+
+CA = congenital anomaly
+
+DE = death
+
+DS = disability
+
+HO = Hospitalization - initial or prolonged
+
+LT = life-threatening
+
+OT = other serious (important medical event)
+
+RI = required intervention to prevent permanent impairment/damage
+
+The occupation code column (or what you can think of as the role of the reporter) had the following possible values:
+
+MD = Physician
+
+PH = Pharmacist
+
+OT = Other health-professional
+
+LW = Lawyer
+
+CN = Consumer
+
+Due to this dataset coming from a database of reports relating to adverse events to medications, I was interested in identifying the frequency of each of these outcomes occurring in addition to looking at who was primarily reporting these adverse events:
+
+![text](images/reports_of_outcomes.png)
+
+![text](images/report_sources_freq.png)
+
+I was able to conclude from this exploratory analysis that the highest volume of adverse reactions had an outcome classified as other serious (important medical event) and that the highest volume of reports were coming directly from consumers. I decided to do hypothesis testing based on my findings related to outcomes, specifically the outcome of death. 
 
 ### Hypothesis Testing:
 * Hypothesis Test # 1:
 
-   H0: There is no difference in proportion of deaths related to adverse drug events among men and women.
+   H0: There is no relationship between proportion of deaths related to adverse drug events among men and women.
    
-   Ha: There is a difference in proportion of deaths related to adverse drug events between men and women.
+   Ha: There is a relationship between proportion of deaths related to adverse drug events between men and women.
    
    Statistical Test Used: Chi-Squared Test for Independence; alpha=0.05
    
@@ -105,13 +149,16 @@ def code_to_numeric(code):
 | **Result** | **Value** |
 | -------- | ------- |
 | chi2 | 9128.3 |
-| P-value | 0.00 |
+| p-value | 0.0000* |
 | dof | 10 |
 
+*The p-value was rounded to 0.00 by ```stats.chi2_contingency()``` indicating that this p-value was very small to begin with.
+
+![text](images/proportion_deaths.png)
 
   Conclusion: There is a statistically significant difference in proportion of deaths among males and females.
   
-### Interesting Finds
+### Interesting Finds:
 * The top reported drug in this database is Xolair (omalizumab)
  * This medication is indicated for moderate to severe asthma and chronic idiopathic urticaria (3)
  * The top 5 reported adverse events related to Xolair in my dataset with their counts are as follows:
@@ -123,6 +170,18 @@ def code_to_numeric(code):
 |asthma | 2333 |
 | Nasopharyngitis  | 2312   |
 | Cough    |  2160  |
+
+* When the data was grouped by age groups and sex I was able to identify the top reported medication for each of these groups:
+
+![text](images/Top_drugs.png)
+
+Not surprisingly, Xolair (the top reported drug in the entire dataset) appeared frequently throughout the different age/sex groups. This data can lend providers an idea of which medications to monitor more carefully or more frequently in patients of certain age/sex.
+
+### Conclusions:
+* Men and women are not equal when it comes to the proportion of certain outcomes related to medications, likewise with certain age groups. Information like this can lend itself to knowing which medications should either be avoided for particular patients or monitored more carefully/frequently. 
+
+### Further study:
+* Linear regressions to predict likelihood of outcomes given handful of patient attributes such as age, sex, weight, and medication they are taking. This will be a potential direction for capstone 2. 
 
 ### References:
 
