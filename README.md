@@ -86,6 +86,10 @@ def code_to_numeric(code):
     if code == 'LBS':
         return 1
  ```
+ 
+ 
+### Exploratory Data Analysis (EDA):
+
 
 ### Hypothesis Testing:
 * Hypothesis Test # 1:
