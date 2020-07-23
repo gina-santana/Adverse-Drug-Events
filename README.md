@@ -102,19 +102,29 @@ The distribution of patient age in years appears to be left-skewed and the distr
 The results of this comparison shows that the weight tends to drop off slightly after the average age and that in general it appears that men have higher weights than women. Nothing unexpected or surprising from these findings. To dig into the dataset, I wanted to explore 2 columns, 'outc_cod' (outcome codes) and 'occp_cod' (occupation code). The outcomes code column had the following possible values:
 
 CA = congenital anomaly
+
 DE = death
+
 DS = disability
+
 HO = Hospitalization - initial or prolonged
+
 LT = life-threatening
+
 OT = other serious (important medical event)
+
 RI = required intervention to prevent permanent impairment/damage
 
 The occupation code column (or what you can think of as the role of the reporter) had the following possible values:
 
 MD = Physician
+
 PH = Pharmacist
+
 OT = Other health-professional
+
 LW = Lawyer
+
 CN = Consumer
 
 Due to this dataset coming from a database of reports relating to adverse events to medications, I was interested in identifying the frequency of each of these outcomes occurring in addition to looking at who was primarily reporting these adverse events:
