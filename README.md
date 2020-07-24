@@ -1,8 +1,6 @@
 # Adverse Drug Events: Identifying trends in adverse drug events to help tailor medications for patients
 
-<img src="http://res.freestockphotos.biz/pictures/1/1167-closeup-of-pills-and-medicine-pv.jpg" alt="alt text" width="1300" height="400">
-
-###### Image by Benjamin Miller(2)
+![text](images/candypills.png)
 
 ### Description: 
 
@@ -205,7 +203,7 @@ In addition to 'RI' standing out (Figure 7), the category of 'CA' or 'congenital
 | Norvir | 557  |  Fetal exposure during pregnancy (9.2%) |
 | Tacrolimus |  478  | Fetal exposure during pregnancy (6.9%) |
 
-Zofran is a medication used for antiemetic (anti-nausea) indications typically in patients undergoing chemotherapy. This medication may be prescribed to a woman during pregnancy to control morning sickness. The CDC has taken the stance that it may be ok to take during pregnancy based on a study done that suggests use of the drug during early pregnancy is not likely to cause birth defects (4). However, when considering other adverse events reported among the top 5 for Zofran, 'injury' (2%), 'atrial septic defect' (1.8%), and 'premature baby' (1.5%) appear. Utilizing additonal data for this would make for interesting data analysis. The second most reported drug for the 'CA' outcome was prednisolone. Prednisolone is a steroid used to reduce inflammation in various inflammatory conditions such as colitis and athritis to name a few. Fetal exposure during pregnancy was the top reported adverse event for this drug followed by: 'premature baby' (2.9%), 'low birth weight baby' (2.7%), 'exposure during pregnancy' (2.6%), and 'white blood cell count decreased' (2.4%). Depakine Chrono, a drug typically used to treat seizures and bipolar disorder, was also reported to have 'fetal exposure during pregnancy' as it's commonly reported adverse event. This was followed by 'dysmorphism' (3.1%), 'speech disorder developmental' (2%), 'disturbance in attention' (1.9%), and 'enuresis' (1.7%). Norvir, an HIV antiviral, had reports of fetal exposure during pregnancy in addition to: 'premature baby' (3.6%), 'spine malformation' (2.3%), 'anal atresia' (1.8%), and 'fibrosis' (1.8%). Lastly, tacrolimus is a drug typically used to prevent organ rejection post-transplant. Other than 'fetal exposure during pregnancy', the commonly reported adverse events were: 'heart disease congenital' (5%), 'ventricular septal defect' (3.8%), 'truncus asteriosis persistent' (3.8%), and 'cardiac septal defect' (3.3%).
+Zofran is a medication used for antiemetic (anti-nausea) indications typically in patients undergoing chemotherapy. This medication may be prescribed to a woman during pregnancy to control morning sickness. The CDC has taken the stance that it may be ok to take during pregnancy based on a study done that suggests use of the drug during early pregnancy is not likely to cause birth defects (2). However, when considering other adverse events reported among the top 5 for Zofran, 'injury' (2%), 'atrial septic defect' (1.8%), and 'premature baby' (1.5%) appear. Utilizing additonal data for this would make for interesting data analysis. The second most reported drug for the 'CA' outcome was prednisolone. Prednisolone is a steroid used to reduce inflammation in various inflammatory conditions such as colitis and athritis to name a few. Fetal exposure during pregnancy was the top reported adverse event for this drug followed by: 'premature baby' (2.9%), 'low birth weight baby' (2.7%), 'exposure during pregnancy' (2.6%), and 'white blood cell count decreased' (2.4%). Depakine Chrono, a drug typically used to treat seizures and bipolar disorder, was also reported to have 'fetal exposure during pregnancy' as it's commonly reported adverse event. This was followed by 'dysmorphism' (3.1%), 'speech disorder developmental' (2%), 'disturbance in attention' (1.9%), and 'enuresis' (1.7%). Norvir, an HIV antiviral, had reports of fetal exposure during pregnancy in addition to: 'premature baby' (3.6%), 'spine malformation' (2.3%), 'anal atresia' (1.8%), and 'fibrosis' (1.8%). Lastly, tacrolimus is a drug typically used to prevent organ rejection post-transplant. Other than 'fetal exposure during pregnancy', the commonly reported adverse events were: 'heart disease congenital' (5%), 'ventricular septal defect' (3.8%), 'truncus asteriosis persistent' (3.8%), and 'cardiac septal defect' (3.3%).
   
 ### Interesting Finds:
 * The top reported drug in this database is Xolair (omalizumab)
@@ -242,8 +240,6 @@ Not surprisingly, Xolair (the top reported drug in the entire dataset) appeared 
 
 (1) https://www.fda.gov/drugs/surveillance/questions-and-answers-fdas-adverse-event-reporting-system-faers
 
-(2) http://www.freestockphotos.biz/stockphoto/1167
+(2) https://www.cdc.gov/ncbddd/birthdefects/features/kf-ondansetron-and-birth-defects.html
 
 (3) https://www.accessdata.fda.gov/drugsatfda_docs/label/2016/103976s5225lbl.pdf
-
-(4) https://www.cdc.gov/ncbddd/birthdefects/features/kf-ondansetron-and-birth-defects.html
