@@ -152,11 +152,24 @@ I was able to conclude from this exploratory analysis that the highest volume of
 | p-value | 0.0000* |
 | dof | 10 |
 
-*The p-value was rounded to 0.00 by ```stats.chi2_contingency()``` indicating that this p-value was very small to begin with.
+  *The p-value was rounded to 0.00 by ```stats.chi2_contingency()``` indicating that this p-value was very small to begin with.
 
-![text](images/proportion_deaths.png)
+  ![text](images/proportion_deaths.png)
+  
+  Although death was the primary outcome that was of interest to me, I looked further into the relative proportions of outcome occurences among men and women. 
+  
+  ![text](images/proportions_outcomes.png)
+  What immediately stands out to me are the disproportionalities among several age groups in the outcome category for 'RI' or 'Required intervention to prevent       permanant impairment/damage' category. As a pharmacist, the questions that naturally came to mind was 'what are the drugs responsible?', 'Are these drugs           primarily used by women such as birth control?' and 'What was the top reported adverse event that caused the required intervention?'. My inquiries lead to the     following top 5 drugs reported with the outcome of 'RI':
+  
+| **Drug Name**  | **Report Frequency** | **Top Reported Adverse Event**  |
+| ------------- | ------------- | -------------|
+| Mirena  | 116  | Complication associated with device |
+| Paraguard T 380A  | 61 | Headace; Pregnancy with contraceptive device |
+| Nexplanon | 61 | Anxiety |
+| Lisinopril  | 61  | Angioedema  |
+| Warfarin  |  57  | Anemia |
 
-  Conclusion: There is a statistically significant difference in proportion of deaths among males and females.
+  
   
 ### Interesting Finds:
 * The top reported drug in this database is Xolair (omalizumab)
