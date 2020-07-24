@@ -4,7 +4,7 @@
 
 ### Description: 
 
-The purpose of this capstone project is to use patient attributes such as age, weight, and gender to help predict the likelihood a patient will experience a side effect from a given drug. 
+The purpose of this capstone is to use patient attributes such as age, weight, and sex to help determine trends in adverse events and outcomes. These trends may aid in providing insights to providers and regulatory agencies on potential dangers posed by medications to particular patient populations. 
 
 ### Data Used:
 
@@ -12,7 +12,7 @@ The U.S. Food and Drug Administration (FDA) Adverse Event Reporting System (FAER
 
 ### Data Overview:
 
-* 7 tables with case ID as common element to each: 
+* 7 tables with 'primaryid' as the common element to each: 
   * **Demographics**
     * 394,066 rows, 34 columns
   * **Drug information**
@@ -29,12 +29,6 @@ The U.S. Food and Drug Administration (FDA) Adverse Event Reporting System (FAER
     * 1,064,664 rows, 4 columns
 
 Additional information on this dataset may be found [here](https://pharmahub.org/app/site/resources/2018/01/00739/FDA-FAERS-Data-Dictionary.pdf)
-
-### Minimum Viable Product (MVP) Objectives:
-
-* MVP: Determine most commonly reported adverse event for a medication within each age group to determine probability of experiencing commonly reported adverse event.
-* MVP+: MVP and determine the probability of experiencing commonly reported adverse event for a medication given patient's age and sex
-* MVP++: MVP+ and determine if other patient attributes such as weight plays a potential role in experiencing side effects given a medication.
 
 ### Raw Data:
 
@@ -89,7 +83,7 @@ def code_to_numeric(code):
  
  
 ### Exploratory Data Analysis (EDA):
-During exploration of this dataset, I explored patient attributes of potential interest such as sex, weight, and age. The distributions of age and weight are as follows:
+During exploration of this dataset, I explored patient attributes of potential interest such as age, weight, and sex. The distributions of age and weight are as follows:
 
 ###### Figure 1
 
